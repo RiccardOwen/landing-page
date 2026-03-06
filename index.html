@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="landing page." />
+  <title>Tarimas La Estación</title>
+  <link rel="icon" type="image/png" href="assets/logotipo icono.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">      <div class="logo-header">
+        <img src="assets/logotipo original.png" alt="Tarimas La Estación">
+      </div>      <nav class="nav" id="nav">
+        <a href="#top">Nuestro producto</a>
+        <a href="#delivery">Entregas</a>
+        <a href="#contact">Contactanos</a>
+        <a href="about.html">Acerca de</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>  <!-- Logo y slogan alineados en una fila -->  <div class="logo-slogan-row">
+    <div class="slogan">"La resistencia que su negocio necesita,<br>en cada una de nuestras tarimas"</div>
+    <div class="logo-main">
+      <img src="assets/logotipo gris.png" alt="Tarimas La Estación">
+    </div>
+  </div>
+
+  <main>
+    <section id="top" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Tarimas de calidad para su necesidad</h1>
+          <p>Tarimas duraderas entregadas rápidamente. Perfectas para envíos, almacenamiento y requisitos personalizados.</p>
+          <div class="hero-cta">
+          </div>
+          <div class="cards">
+            <article class="card">
+              <h3>Duraderos y confiables</h3>
+              <p>Nuestras tarimas están hechas para durar, soportando cargas pesadas y uso frecuente.</p>
+            </article>
+            <article class="card">
+              <h3>Tamaños personalizados y entrega rápida</h3>
+              <p>Solicite sus tarimas con entrega rápida.</p>
+            </article>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <img src="assets/IMG-20260304-WA0003.jpg" alt="Tarima de madera">
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="features" class="features container">
+      <h2 class="sr-only">Características</h2>
+      
+    </section> -->
+
+    <section id="delivery" class="gallery container">
+      <h2>Tarimas directo a usted</h2>
+      <p>Contamos con una flota de camiones lista para entregarle su pedido</p>
+      <div class="carousel" id="carousel">
+        <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+        <div class="carousel-track">
+          <img src="assets/camion1.png" alt="Camión de la flota" class="carousel-img" />
+          <img src="assets/camion2.png" alt="Camión de la flota" class="carousel-img" />
+          <img src="assets/camion3.png" alt="Tarimas de madera" class="carousel-img" />
+          <img src="assets/camion4.png" alt="Tarimas de madera" class="carousel-img" />
+          <img src="assets/camion5.png" alt="Tarimas de madera" class="carousel-img" />
+        </div>
+        <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+      </div>
+    </section>    <section id="contact" class="contact container">
+      <h2>Contáctanos</h2>
+      <p>¿Necesita tarimas? Solicite una cotización o pregunte por nuestros productos.</p>
+      <div class="contact-wrapper">        <div class="contact-info">
+          <h3>Ubicación</h3>
+          <p><strong>Tarimas La Estación</strong></p>
+          <p id="address">Venustiano Carranza #1217, León, Guanajuato, México</p>
+          <p id="phone">Teléfono: <a href="tel:+524772704530">+52 477 270 4530</a></p>
+          <p id="email">Email: <a href="mailto:tarminaslaestacion@outlook.com">tarminaslaestacion@outlook.com</a></p>
+          <p style="font-size:14px;color:var(--muted);margin-top:12px"><strong>Horario:</strong> Lunes a Viernes 8:00 AM - 6:00 PM</p>
+        </div>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.8827693287446!2d-101.6834186!3d21.1271801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b594f5e5e5e5d%3A0x5e5e5e5e5e5e5e5e!2sVenustiano%20Carranza%201217%2C%20Le%C3%B3n%2C%20Gto.!5e0!3m2!1ses!2smx!4v1741275600" width="100%" height="400" style="border:0;border-radius:12px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-social">
+        <p><strong>Contactanos:</strong></p>        <div class="social-icons">
+          <a href="https://www.facebook.com/people/tarimas_la_estacion/100086547311457/" target="_blank" class="social-link"><img src="assets/facebook.png" alt="Facebook" class="social-icon"></a>
+          <a href="https://wa.me/524772704530?text=Hola%2C%20me%20gustaría%20solicitar%20información%20sobre%20tarimas" target="_blank" class="social-link whatsapp-link"><img src="assets/social.png" alt="WhatsApp" class="social-icon"></a>
+        </div>
+      </div>
+      <p>© <span id="year"></span> Tarimas La Estación. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
