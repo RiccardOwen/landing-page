@@ -1,7 +1,11 @@
 <!doctype html>
 <html lang="en">
-<head>  <meta charset="utf-8" />
+<head>  
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap" rel="stylesheet">
   <meta name="description" content="Tarimas La Estación - Venta de tarimas de madera de calidad, pallets duraderos y confiables para envíos y almacenamiento. Tarimas León, Guanajuato. Entregas rápidas." />
   <meta name="keywords" content="tarimas león, tarimas la estación, tarimas calidad, pallets, tarimas de madera, pallets de madera, tarimas para envío, almacenamiento, León Guanajuato" />
   <title>Tarimas La Estación - Tarimas y Pallets de Calidad en León</title>
@@ -16,7 +20,7 @@
       </div>      <nav class="nav" id="nav">
         <a href="#top">Nuestro producto</a>
         <a href="#delivery">Entregas</a>
-        <a href="#contact">Contactanos</a>
+        <a href="#contact">Contáctanos</a>
         <a href="gallery.html">Galería</a>
         <a href="about.html">Acerca de</a>
       </nav>
@@ -61,8 +65,7 @@
 
     <section id="delivery" class="gallery container">
       <h2>Tarimas directo a usted</h2>
-      <p>Contamos con una flota de camiones lista para entregarle su pedido</p>
-      <div class="carousel" id="carousel">
+      <p>Contamos con una flota de camiones lista para entregarle su pedido</p>      <!-- <div class="carousel" id="carousel">
         <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
         <div class="carousel-track">
           <img src="assets/camion1.png" alt="Camión de la flota" class="carousel-img" />
@@ -72,29 +75,37 @@
           <img src="assets/camion5.png" alt="Tarimas de madera" class="carousel-img" />
         </div>
         <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+      </div> -->
+      <div class="delivery-image">
+        <img src="assets/Untitled.jpg" alt="Entregas de tarimas">
       </div>
-    </section>    <section id="contact" class="contact container">
-      <h2>Contáctanos</h2>
-      <p>¿Necesita tarimas? Solicite una cotización o pregunte por nuestros productos.</p>
-      <div class="contact-wrapper">        <div class="contact-info">
+    </section>    <section id="contact" class="contact">
+      <div class="contact-header">
+        <div class="container">
+          <h2>Contáctanos</h2>
+          <p>¿Necesitas tarimas? Solicita una cotización o pregunta por nuestros productos.</p>
+        </div>
+      </div>
+      <div class="container">
+      <div class="contact-wrapper"><div class="contact-info">
           <h3>Ubicación</h3>
           <p><strong>Tarimas La Estación</strong></p>
           <p id="address">Venustiano Carranza #1217, León, Guanajuato, México</p>
-          <p id="phone">Teléfono: <a href="tel:+524772704530">+52 477 270 4530</a></p>
+          <p id="phone">Teléfono: <a href="tel:+524773786494">+52 477 378 6494</a></p>
           <p id="email">Email: <a href="mailto:tarminaslaestacion@outlook.com">tarminaslaestacion@outlook.com</a></p>
-          <p style="font-size:14px;color:var(--muted);margin-top:12px"><strong>Horario:</strong> Lunes a Viernes 8:00 AM - 6:00 PM</p>
+          <p style="font-size:14px;color:var(--muted);margin-top:12px"><strong>Horario:</strong> Lunes a viernes 8:00 AM - 6:00 PM</p>
         </div>
         <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.8827693287446!2d-101.6834186!3d21.1271801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b594f5e5e5e5d%3A0x5e5e5e5e5e5e5e5e!2sVenustiano%20Carranza%201217%2C%20Le%C3%B3n%2C%20Gto.!5e0!3m2!1ses!2smx!4v1741275600" width="100%" height="400" style="border:0;border-radius:12px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.8827693287446!2d-101.6834186!3d21.1271801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b594f5e5e5e5d%3A0x5e5e5e5e5e5e5e5e!2sVenustiano%20Carranza%201217%2C%20Le%C3%B3n%2C%20Gto.!5e0!3m2!1ses!2smx!4v1741275600" width="100%" height="400" style="border:0;border-radius:12px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+      </div>
       </div>
     </section>
   </main>  <footer class="site-footer">
     <div class="container">
       <div class="footer-social">
-        <p><strong>Contactanos:</strong></p>        <div class="social-icons">
+        <p><strong>Contáctanos:</strong></p>        <div class="social-icons">
           <a href="https://www.facebook.com/people/tarimas_la_estacion/100086547311457/" target="_blank" class="social-link"><img src="assets/facebook.png" alt="Facebook" class="social-icon"></a>
-          <a href="https://wa.me/524772704530?text=Hola%2C%20me%20gustaría%20solicitar%20información%20sobre%20tarimas" target="_blank" class="social-link whatsapp-link"><img src="assets/social.png" alt="WhatsApp" class="social-icon"></a>
+          <a href="https://wa.me/524773786494?text=Hola%2C%20me%20gustaría%20solicitar%20información%20sobre%20tarimas" target="_blank" class="social-link whatsapp-link"><img src="assets/social.png" alt="WhatsApp" class="social-icon"></a>
         </div>
       </div>
       <p>© <span id="year"></span> Tarimas La Estación. Todos los derechos reservados.</p>
