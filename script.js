@@ -21,13 +21,16 @@ document.addEventListener('DOMContentLoaded', function () {  // Scroll-triggered
     const elementsToFadeIn = document.querySelectorAll(
       'section.hero, section.gallery, section.contact, footer.site-footer'
     );
-    
-    elementsToFadeIn.forEach((el) => {
+      elementsToFadeIn.forEach((el) => {
+      // Remove visible class to reset animation on page load
+      el.classList.remove('visible');
       // Skip if already has the class
       if (!el.classList.contains('fade-in-element')) {
         el.classList.add('fade-in-element');
       }
-    });    // Create a single observer for all elements
+    });
+
+    // Create a single observer for all elements
     const observerOptions = {
       threshold: 0,
       rootMargin: '-400px 0px 0px 0px'
@@ -37,6 +40,9 @@ document.addEventListener('DOMContentLoaded', function () {  // Scroll-triggered
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
+        } else {
+          // Remove visible class when element leaves viewport to re-trigger animation on re-entry
+          entry.target.classList.remove('visible');
         }
       });
     }, observerOptions);
