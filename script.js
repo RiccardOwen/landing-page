@@ -14,7 +14,44 @@ nav.addEventListener('click', (e) => {
 
 yearEl.textContent = new Date().getFullYear();
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {  // Scroll-triggered fade-in animations
+  function initFadeInOnScroll() {
+    // Add fade-in-element class to ONLY main sections (not nested elements)
+    // Logo-slogan-row and site-header are excluded - they stay visible
+    const elementsToFadeIn = document.querySelectorAll(
+      'section.hero, section.gallery, section.contact, footer.site-footer'
+    );
+    
+    elementsToFadeIn.forEach((el) => {
+      // Skip if already has the class
+      if (!el.classList.contains('fade-in-element')) {
+        el.classList.add('fade-in-element');
+      }
+    });    // Create a single observer for all elements
+    const observerOptions = {
+      threshold: 0,
+      rootMargin: '-400px 0px 0px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Delay observer setup to ensure page is fully laid out
+    setTimeout(() => {
+      elementsToFadeIn.forEach((el) => {
+        observer.observe(el);
+      });
+    }, 100);
+  }
+
+  // Initialize fade-in on scroll
+  initFadeInOnScroll();
+
   // Carousel functionality
   const track = document.querySelector('.carousel-track');
   if (track) {
