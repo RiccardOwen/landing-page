@@ -34,16 +34,13 @@ document.addEventListener('DOMContentLoaded', function () {  // Scroll-triggered
     const observerOptions = {
       threshold: 0,
       rootMargin: '-400px 0px 0px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
+    };    const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-        } else {
-          // Remove visible class when element leaves viewport to re-trigger animation on re-entry
-          entry.target.classList.remove('visible');
         }
+        // Note: We do NOT remove the 'visible' class when leaving viewport
+        // This keeps elements visible once they fade in
       });
     }, observerOptions);
 
